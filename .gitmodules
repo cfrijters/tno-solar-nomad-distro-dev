@@ -1,3 +1,6 @@
 [submodule "packages/nomad-FAIR"]
 	path = packages/nomad-FAIR
 	url = https://gitlab.mpcdf.mpg.de/nomad-lab/nomad-FAIR.git
+[submodule "packages/tno-solar-nomad-plugin-base"]
+	path = packages/tno-solar-nomad-plugin-base
+	url = https://github.com/cfrijters/tno-solar-nomad-plugin-base.git
