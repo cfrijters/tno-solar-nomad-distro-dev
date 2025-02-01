@@ -1,5 +1,12 @@
 {
     "python.analysis.extraPaths": [
-        "./packages/nomad-FAIR"
-    ]
+        "./packages/nomad-FAIR",
+        "./packages/tno-soloar-nomad-plugin-base"
+    ],
+    "python.defaultInterpreterPath": "/usr/local/bin/python3",
+
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/*.egg-info": true,
+    }
 }
