@@ -49,10 +49,61 @@ dev-dependencies = [
 constraint-dependencies = ["hyperspy>=1.7.6"]
 required-version = ">=0.5.14"
 
+
 [tool.ruff]
+# Exclude a variety of commonly ignored directories.
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+]
+
 # Same as Black.
 line-length = 200 # it's 2025, we have wide screens now
 indent-width = 4
+
+
+[tool.ruff.lint]
+select = [
+    # pycodestyle
+    "E",
+    # Pyflakes
+    "F",
+    # pyupgrade
+    "UP",
+    # isort
+    "I",
+    # pylint
+    "PL",
+]
+
+ignore = [
+    "F403", # 'from module import *' used; unable to detect undefined names
+    "E501", # line too long 
+]
+
+fixable = ["ALL"]
+
+# Allow unused variables when underscore-prefixed.
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
 
 [tool.poe.tasks]
 submodule = "git submodule update --init --recursive"
