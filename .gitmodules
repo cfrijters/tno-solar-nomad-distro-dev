@@ -4,3 +4,9 @@
 [submodule "packages/tno-solar-nomad-plugin-base"]
 	path = packages/tno-solar-nomad-plugin-base
 	url = https://github.com/cfrijters/tno-solar-nomad-plugin-base.git
+[submodule "packages/nomad-measurements"]
+	path = packages/nomad-measurements
+	url = https://github.com/FAIRmat-NFDI/nomad-measurements.git
+[submodule "packages/readers-xrd"]
+	path = packages/readers-xrd
+	url = https://github.com/FAIRmat-NFDI/readers-xrd.git
