@@ -4,3 +4,4 @@
 [submodule "packages/tno-solar-nomad-plugin-base"]
 	path = packages/tno-solar-nomad-plugin-base
 	url = https://github.com/cfrijters/tno-solar-nomad-plugin-base.git
+	branch = main
